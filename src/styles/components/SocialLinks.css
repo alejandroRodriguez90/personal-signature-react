@@ -1,0 +1,23 @@
+/* src/styles/components/SocialLinks.css */
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.social-btn {
+    font-size: 24px; /* Iconos más grandes */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7; /* Ligeramente transparentes por defecto */
+}
+
+.social-btn:hover {
+    transform: scale(1.15); /* Agrandar al pasar el mouse */
+    opacity: 1; /* Opacidad completa */
+}
+
+/* Colores Oficiales */
+.social-btn.facebook { color: #1877F2; }
+.social-btn.instagram { color: #C13584; }
+.social-btn.linkedin { color: #0A66C2; }
+.social-btn.whatsapp { color: #25D366; }

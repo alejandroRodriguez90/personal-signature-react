@@ -1,0 +1,89 @@
+/* src/styles/components/ProjectCard.css (VERSIÓN INTEGRADA) */
+
+.project-card {
+  /* Eliminamos fondo, borde y sombra */
+  padding: 30px 0; /* Espaciado vertical, sin padding lateral */
+  margin-bottom: 20px;
+  text-align: left;
+  /* Añadimos un borde inferior para separar los proyectos */
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* El último proyecto no necesita un borde inferior */
+.project-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.project-card:hover {
+  transform: none; /* Quitamos el efecto de hover ya que no es una tarjeta */
+  box-shadow: none;
+}
+/* ... (El resto de los estilos para h4, p, tech, etc., se mantienen perfectos) ... */
+
+.project-card h4 {
+  font-family: "Montserrat", sans-serif; 
+  font-size: 1.25rem;
+  color: var(--dark-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem; /* El tamaño del texto de la descripción lo mantenemos más pequeño */
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.project-tech span {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-out;
+}
+
+.project-link:hover::after {
+  transform: scaleX(1);
+}
+
+.project-link i {
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover i {
+  transform: translateX(4px);
+}

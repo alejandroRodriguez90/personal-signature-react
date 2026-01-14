@@ -1,0 +1,12 @@
+/* src/styles/variables.css */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --dark-color: #1a1a2e; /* Para títulos */
+    --dark-color-soft: #343a40; /* NUEVO: Para texto de cuerpo */
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --text-light: #6c757d;
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}

@@ -1,0 +1,37 @@
+/* src/styles/global.css (VERSIÓN FINAL) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap');
+@import './variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: var(--dark-color-soft);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Evita el scroll horizontal a nivel de toda la página */
+    overflow-x: hidden;
+}
+
+/* El contenedor principal ocupa toda la ventana */
+.main-container {
+    display: flex;
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        width: 100%; /* En móvil, volvemos a 100% para evitar problemas con vw */
+        height: auto;
+        overflow: visible;
+    }
+}

@@ -1,0 +1,22 @@
+/* src/styles/components/SkillBadge.css */
+.skill-badge {
+  background: #e9ecef;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--dark-color-soft); /* Hereda el color del texto */
+  white-space: nowrap;
+  transition: all 0.3s ease;
+
+  /* ¡IMPORTANTE! Esto quita el subrayado de los enlaces */
+  text-decoration: none;
+  display: inline-block; /* Asegura un comportamiento consistente */
+}
+
+.skill-badge:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+}

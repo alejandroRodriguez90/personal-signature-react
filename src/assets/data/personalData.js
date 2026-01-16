@@ -4,7 +4,7 @@ import firmaBackground from "../images/Firma.PNG";
 
 export const personalData = {
   name: "David Alejandro Rodríguez",
-  title: "Desarrollador Web Full-Stack",
+  title: "Desarrollador Frontend",
 
   // Rutas de las imágenes de perfil
   photo1: davidPhoto1,
